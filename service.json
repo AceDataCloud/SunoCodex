@@ -1,0 +1,24 @@
+{
+  "service": "Suno",
+  "repo": "SunoCodex",
+  "slug": "suno",
+  "mcp": "suno",
+  "purpose": "music generation, custom lyrics, song extension and covers",
+  "zh": "音乐生成、歌词、续写与翻唱",
+  "query": "suno_get_task",
+  "info": "suno_list_models",
+  "tools": [
+    "suno_list_models",
+    "suno_list_actions",
+    "suno_generate_music",
+    "suno_generate_custom_music",
+    "suno_extend_music",
+    "suno_cover_music",
+    "suno_get_task",
+    "suno_get_tasks_batch"
+  ],
+  "api": "/suno/audios",
+  "task_api": "/suno/tasks",
+  "icon_repo": "SunoCursor",
+  "icon": "assets/logo.jpg"
+}

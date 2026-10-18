@@ -1,0 +1,58 @@
+{
+  "version": 2,
+  "utm_keys": [
+    "utm_source",
+    "utm_medium",
+    "utm_campaign",
+    "utm_content"
+  ],
+  "max_tag_length": 96,
+  "tag_pattern": "^[a-z0-9][a-z0-9_.-]{0,95}$",
+  "window_seconds": 604800,
+  "sources": {
+    "github": "referral",
+    "pypi": "referral",
+    "npm": "referral",
+    "opensource": "referral",
+    "vscode_marketplace": "referral",
+    "vscode": "referral",
+    "jetbrains_marketplace": "referral",
+    "jetbrains": "referral",
+    "mcp_registry": "referral",
+    "skills_sh": "referral",
+    "agent_skill": "referral",
+    "cli": "referral",
+    "docker_hub": "referral",
+    "product_hunt": "referral",
+    "hacker_news": "referral",
+    "devto": "referral",
+    "medium": "referral",
+    "x": "social",
+    "reddit": "social",
+    "linkedin": "social",
+    "discord": "social",
+    "zhihu": "social",
+    "juejin": "referral",
+    "csdn": "referral",
+    "xiaohongshu": "social",
+    "bilibili": "social",
+    "youtube": "social",
+    "wechat": "social",
+    "email": "email",
+    "google": "cpc",
+    "offline": "qr"
+  },
+  "acquisition_model": "last_tagged_before_signup_7d",
+  "captured_at_key": "utm_captured_at",
+  "observation_days": 30,
+  "link_defaults": {
+    "campaign": "evergreen",
+    "content_template": "{entry}_{surface}_{placement}",
+    "surfaces": {
+      "github": "readme",
+      "pypi": "package",
+      "vscode_marketplace": "vscode",
+      "jetbrains_marketplace": "jetbrains"
+    }
+  }
+}

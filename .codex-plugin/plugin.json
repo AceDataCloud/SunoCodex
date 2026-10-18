@@ -1,0 +1,42 @@
+{
+  "name": "suno",
+  "version": "0.1.0",
+  "description": "Use Suno for music generation, custom lyrics, song extension and covers through Ace Data Cloud. Install this independent Codex plugin, use your own API key, and retrieve the same task until it finishes.",
+  "author": {
+    "name": "Ace Data Cloud",
+    "email": "dev@acedata.cloud",
+    "url": "https://github.com/AceDataCloud"
+  },
+  "homepage": "https://github.com/AceDataCloud/SunoCodex#readme",
+  "repository": "https://github.com/AceDataCloud/SunoCodex",
+  "license": "MIT",
+  "keywords": [
+    "suno",
+    "suno",
+    "music",
+    "acedatacloud",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Suno by Ace Data Cloud",
+    "shortDescription": "Suno tools with your Ace API key",
+    "longDescription": "Use Suno for music generation, custom lyrics, song extension and covers through Ace Data Cloud. Install this independent Codex plugin, use your own API key, and retrieve the same task until it finishes. This integration is provided by Ace Data Cloud and is not an official plugin from the service brand. Media API calls may incur charges.",
+    "developerName": "Ace Data Cloud",
+    "category": "Creativity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://platform.acedata.cloud/models?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen&utm_content=sunocodex_readme_website",
+    "defaultPrompt": [
+      "Show Suno model information without generating.",
+      "Use Suno to create a result after I confirm the cost.",
+      "Check my existing Suno task ID without regenerating."
+    ],
+    "composerIcon": "./assets/icon.jpg",
+    "logo": "./assets/icon.jpg",
+    "screenshots": []
+  }
+}
