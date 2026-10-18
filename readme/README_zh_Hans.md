@@ -6,16 +6,16 @@
 
 ## 1. 安装
 
-目标是在 Codex 官方插件目录搜索 **Suno**，选择 **Suno by Ace Data Cloud** 并安装。当前官方尚未收录；源码 PR、第三方目录安装与官方上线分开。
+目标是在 Codex 官方插件目录搜索 **Suno**，选择 **Suno by Ace Data Cloud** 并安装。当前官方尚未收录；第三方正式版本安装与官方上线分开。
 
-评估候选包时，用 Codex 0.163.0 或更高版本执行：
+安装已发布的第三方版本时，用 Codex 0.163.0 或更高版本执行：
 
 ```bash
-codex plugin marketplace add AceDataCloud/SunoCodex --ref codex/native-service-20261018
+codex plugin marketplace add AceDataCloud/SunoCodex --ref v0.1.0
 codex plugin add suno@acedatacloud-suno --json
 ```
 
-加入的是该服务的第三方目录；安装后仅启用Suno。在原生插件界面选择刚加入的目录，按服务名搜索并核对发布者 Ace Data Cloud；本轮没有界面实拍验收。
+该命令固定到 `v0.1.0`，加入的是该服务的第三方目录；安装后仅启用Suno。在原生插件界面选择刚加入的目录，按服务名搜索并核对发布者 Ace Data Cloud；本轮没有界面实拍验收。
 
 ## 2. 获取与配置 API Token
 
@@ -51,6 +51,6 @@ PowerShell 用 `$env:ACEDATACLOUD_API_TOKEN = "你的服务 API Key"`。进入�
 
 ## 常见问题
 
-401：变量未传入、Key类型或有效期错误；403：权限/Allowed APIs；429：等待并减少并发，勿自动重试收费提交；pending：查原ID；400：核实当前工具schema；5xx/超时：保留task/trace ID，先查原状态。官方搜不到：当前候选尚未收录，不能把第三方安装称官方上线。
+401：变量未传入、Key类型或有效期错误；403：权限/Allowed APIs；429：等待并减少并发，勿自动重试收费提交；pending：查原ID；400：核实当前工具schema；5xx/超时：保留task/trace ID，先查原状态。官方搜不到：当前官方尚未收录，不能把第三方安装称官方上线。
 
 插件免费，API按账户当前规则计费，Key和所选输入发送至Ace托管服务。支持：dev@acedata.cloud；[源码](https://github.com/AceDataCloud/SunoCodex)；[隐私](../PRIVACY.md)。

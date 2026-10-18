@@ -6,16 +6,16 @@ Music generation, custom lyrics, song extension and covers in Codex, provided by
 
 ## 1. Install the correct native plugin
 
-The target is the Codex official plugin directory with the name **Suno by Ace Data Cloud**. **Official listing is not live.** The [official catalog](https://github.com/openai/plugins) submission and review are separate from this source package. Do not expect the default official search to find this candidate yet.
+The target is the Codex official plugin directory with the name **Suno by Ace Data Cloud**. **Official listing is not live.** The [official catalog](https://github.com/openai/plugins) submission and review are separate from this source package. Do not expect the default official search to find this integration until it is accepted.
 
-For evaluation before official acceptance, add this service's third-party marketplace using Codex 0.163.0 or later:
+For the released third-party installation, add this service's marketplace using Codex 0.163.0 or later:
 
 ```bash
-codex plugin marketplace add AceDataCloud/SunoCodex --ref codex/native-service-20261018
+codex plugin marketplace add AceDataCloud/SunoCodex --ref v0.1.0
 codex plugin add suno@acedatacloud-suno --json
 ```
 
-This uses the original source PR branch until a reviewed release exists. Inspect it first; it is a third-party marketplace, not the official default catalog. In Codex's plugin interface, search **Suno** within that added marketplace and check the publisher is **Ace Data Cloud**. The CLI `plugin list --available --marketplace acedatacloud-suno --json` exposes the same plugin metadata. Adding a marketplace alone does not install its plugin; adding this plugin installs only Suno.
+This pins the published `v0.1.0` release. It is a third-party marketplace, not the official default catalog. Inspect the source and release before installing. In Codex's plugin interface, search **Suno** within that added marketplace and check the publisher is **Ace Data Cloud**. The CLI `plugin list --available --marketplace acedatacloud-suno --json` exposes the same plugin metadata. Adding a marketplace alone does not install its plugin; adding this plugin installs only Suno.
 
 ## 2. Get a service API key
 
@@ -39,7 +39,7 @@ export ACEDATACLOUD_API_TOKEN="YOUR_SERVICE_API_KEY"
 codex
 ```
 
-PowerShell: `$env:ACEDATACLOUD_API_TOKEN = "YOUR_SERVICE_API_KEY"`, then `codex`. Start a fresh session and run `/mcp`; the plugin server should connect and show its tools. GUI-launched Codex must inherit the same variable from its launch environment. Do not put the key into a prompt, shared configuration, screenshot or Git. No custom auth dialog is claimed in this candidate.
+PowerShell: `$env:ACEDATACLOUD_API_TOKEN = "YOUR_SERVICE_API_KEY"`, then `codex`. Start a fresh session and run `/mcp`; the plugin server should connect and show its tools. GUI-launched Codex must inherit the same variable from its launch environment. Do not put the key into a prompt, shared configuration, screenshot or Git. This version does not provide a custom GUI credential dialog.
 
 ![Official Codex CLI interface reference](assets/codex-official-reference.png)
 
@@ -55,7 +55,7 @@ Generation or editing is a separate, potentially charged action. First confirm t
 
 | Symptom | Check |
 | --- | --- |
-| Plugin not in official search | Candidate has not been accepted there; use the explicit third-party evaluation route above. |
+| Plugin not in official search | The integration has not been accepted there; use the explicit third-party release route above. |
 | Key missing / 401 | Full key in Codex launch environment, no `Bearer ` prefix, correct key type/expiration. |
 | 403 | Service/model and Allowed APIs access; do not create wider credentials automatically. |
 | 429 | Wait and reduce concurrency. Do not automatically retry a paid submission. |
