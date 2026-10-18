@@ -1,0 +1,20 @@
+{
+  "name": "acedatacloud-suno",
+  "interface": {
+    "displayName": "Suno by Ace Data Cloud"
+  },
+  "plugins": [
+    {
+      "name": "suno",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Creativity"
+    }
+  ]
+}

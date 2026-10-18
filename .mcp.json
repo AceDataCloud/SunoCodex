@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "suno": {
+      "url": "https://suno.mcp.acedata.cloud/mcp",
+      "bearer_token_env_var": "ACEDATACLOUD_API_TOKEN",
+      "enabled_tools": [
+        "suno_list_models",
+        "suno_list_actions",
+        "suno_generate_music",
+        "suno_generate_custom_music",
+        "suno_extend_music",
+        "suno_cover_music",
+        "suno_get_task",
+        "suno_get_tasks_batch"
+      ]
+    }
+  }
+}

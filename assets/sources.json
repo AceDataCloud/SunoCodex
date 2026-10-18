@@ -1,0 +1,35 @@
+[
+  {
+    "path": "assets/icon.jpg",
+    "source_url": "https://raw.githubusercontent.com/AceDataCloud/SunoCursor/451704ab3565b12bb928f2862d68f8337d057eb0/assets/logo.jpg",
+    "type": "existing Ace service icon",
+    "date": "2026-10-18 downloaded",
+    "limits": "Service identification only, integration published by Ace Data Cloud, no third-party official endorsement.",
+    "sha256": "d2ccb1c0039519a68913ad447114f8f9ecca161ffc2105cd61c414e06f8747d9"
+  },
+  {
+    "path": "assets/get-api-key-en.png",
+    "source_url": "https://raw.githubusercontent.com/AceDataCloud/SunoDify/8d3d03570e73324220f111f7fe343da0792a8071/_assets/tutorial/get-api-key-en.png",
+    "type": "real platform onboarding screenshot, redacted",
+    "date": "Source pinned 2026-10-18; capture date not declared",
+    "limits": "Create-key screenshot uses an older Dify tutorial name; enter a Codex-specific name instead. No visible real credential.",
+    "sha256": "b63787f2bd15af82fef9ab61c99e11c454355ac86e91f7f94559386b795069b7"
+  },
+  {
+    "path": "assets/create-api-key-en.png",
+    "source_url": "https://raw.githubusercontent.com/AceDataCloud/SunoDify/8d3d03570e73324220f111f7fe343da0792a8071/_assets/tutorial/create-api-key-en.png",
+    "type": "real platform onboarding screenshot, redacted",
+    "date": "Source pinned 2026-10-18; capture date not declared",
+    "limits": "Create-key screenshot uses an older Dify tutorial name; enter a Codex-specific name instead. No visible real credential.",
+    "sha256": "977c06780b36ca33f2fb3ba546e2594efe5895400e4cb58d842eb564c3bb09da"
+  },
+  {
+    "path": "assets/codex-official-reference.png",
+    "source_url": "https://raw.githubusercontent.com/openai/codex/835d3049f03ea71491299b2548c5ab8fa932f897/.github/codex-cli-splash.png",
+    "official_page_url": "https://github.com/openai/codex/blob/835d3049f03ea71491299b2548c5ab8fa932f897/README.md",
+    "type": "official Codex interface reference, unedited",
+    "date": "Source file updated 2026-01-02; actual capture date unknown",
+    "limits": "Shows Codex CLI layout only. No Ace plugin install, authorization or successful service execution is shown.",
+    "sha256": "15b86fa9c0790a779ecdd84f1e7dee029ab79bfb093bd3c4876998696925b013"
+  }
+]
