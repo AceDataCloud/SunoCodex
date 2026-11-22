@@ -29,7 +29,7 @@
       "Read",
       "Write"
     ],
-    "websiteURL": "https://platform.acedata.cloud/models?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen&utm_content=sunocodex_readme_website",
+    "websiteURL": "https://platform.acedata.cloud/models?utm_source=codex&utm_medium=referral&utm_campaign=evergreen&utm_content=sunocodex_readme_website",
     "defaultPrompt": [
       "Show Suno model information without generating.",
       "Use Suno to create a result after I confirm the cost.",

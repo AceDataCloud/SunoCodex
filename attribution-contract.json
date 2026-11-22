@@ -40,7 +40,8 @@
     "wechat": "social",
     "email": "email",
     "google": "cpc",
-    "offline": "qr"
+    "offline": "qr",
+    "codex": "referral"
   },
   "acquisition_model": "last_tagged_before_signup_7d",
   "captured_at_key": "utm_captured_at",
